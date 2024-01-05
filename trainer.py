@@ -97,7 +97,7 @@ class SlimTrainer():
                 else:
                     loss = self.compute_loss(
                         labels=batch['labels'].to(self.model.device),
-                        input_ids=batch['input_ids'].to(self.model.device)
+                        input_ids=batch['input_ids'].to(self.model.device),
                         meta=batch.get('meta', None)
                     )
 
